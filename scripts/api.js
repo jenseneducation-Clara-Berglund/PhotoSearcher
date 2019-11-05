@@ -1,0 +1,3 @@
+/*
+This file contains only functionality for accessing the Flickr API
+*/

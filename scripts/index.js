@@ -14,8 +14,8 @@ let searchButtonClicked = async () => {
   let searchTerm = document.getElementById("searchField").value;
   //if the promise is rejected the catch (error) will run.
   try {
-    let response = await getImages(searchTerm, numOfResult); //promise
-    let responseAsJson = await response.json(); //promise
+    let response = await getImages(searchTerm, numOfResult); //value of resolved promise
+    let responseAsJson = await response.json(); //value of resolved promise
     // so far so good, let's handle the response
     handlePhotosResponse(responseAsJson);
   } catch (error) {

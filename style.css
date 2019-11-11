@@ -1,0 +1,129 @@
+body {
+  background: rgb(49, 49, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+input {
+  height: 2em;
+  width: 15em;
+  font-size: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(83, 83, 83);
+  border: none;
+  color: white;
+  outline: none;
+  padding-left: 10px;
+}
+
+label {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  height: 5em;
+  width: 15em;
+  background-color: rgb(83, 83, 83);
+  font-family: "Raleway", sans-serif;
+  color: white;
+  border: none;
+  outline-color: white;
+}
+
+.searchFieldAndButtonContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#imagesContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagesContainer img {
+  width: 12em;
+  height: 12em;
+  margin: 1em;
+}
+
+#modal_ {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#lightBox {
+  height: 80%;
+  width: 60%;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainImageContainer {
+  height: 60%;
+  width: 100%;
+  background-color: rgb(29, 27, 27);
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+#mainImageContainer img {
+  width: 70%;
+  height: 90%;
+}
+
+#previewImagesContainer {
+  height: 40%;
+  width: 100%;
+  background-color: rgb(29, 27, 27);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: scroll;
+}
+
+#previewImagesContainer img {
+  width: 25%;
+  height: 70%;
+  margin: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    width: 80%;
+    height: 1.5em;
+    min-width: 5em;
+  }
+}
